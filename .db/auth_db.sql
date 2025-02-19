@@ -35,3 +35,37 @@ ALTER TABLE `recusers`
   MODIFY `user_id` int(100) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
+CREATE TABLE `giveAdopt` (
+  `pet_id` int(100) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL,
+  `petcatagory` varchar(255) NOT NULL,
+  `petage` varchar(255) NOT NULL,
+  `des` varchar(255) NOT NULL,
+  `cinfo` varchar(255) NOT NULL,
+  `up` varchar(255) NOT NULL ,
+  `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`pet_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `giveAdopt`
+MODIFY COLUMN `pet_id` int(100) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+CREATE TABLE `productsell` (
+  `product_id` int(100) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL,
+  `productcatagory` varchar(255) NOT NULL,
+  `productname` varchar(255) NOT NULL,
+  `des` varchar(255) NOT NULL,
+  `cinfo` varchar(255) NOT NULL,
+  `price` varchar(255) NOT NULL,
+  `up` varchar(255) NOT NULL ,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`product_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `productsell`
+  MODIFY `product_id` int(100) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+
