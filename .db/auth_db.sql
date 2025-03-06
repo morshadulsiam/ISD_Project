@@ -68,26 +68,4 @@ ALTER TABLE `productsell`
   MODIFY `product_id` int(100) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
-CREATE TABLE `cart`(
-  `product_id` int(111)NOT NULL AUTO_INCREMENT,
-  `user_id1` int(11) NOT NULL,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`product_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-ALTER TABLE `cart`
-   MODIFY `product_id` int(100) NOT NULL AUTO_INCREMENT;
-COMMIT;
-
-
-CREATE TABLE `petcart`(
-  `pet_id` int(111)NOT NULL,
-  `user_id1` int(11) NOT NULL,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`pet_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-ALTER TABLE `petcart`
-   MODIFY `pet_id` int(100) NOT NULL AUTO_INCREMENT;
-COMMIT;
 
