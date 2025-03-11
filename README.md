@@ -17,4 +17,3 @@ PetHub is an online platform designed to simplify the pet adoption process by co
 
 **Run the Application**: Open your web browser and navigate to http://localhost/pethub.
 
-## Screencast [LINK]()
